@@ -52,15 +52,15 @@ openssl genpkey -algorithm RSA -out server.key
 openssl req -new -key server.key -out server.csr
 
 When filling out the CSR prompts, you can use:
-Country Name (2 letter code) [XX]:US
-State or Province Name (full name) []:Colorado
-Locality Name (eg, city) [Default City]:Colorado Springs
-Organization Name (eg, company) [Default Company Ltd]:UCCS
-Organizational Unit Name (eg, section) []:Computer Science Department
-Common Name (eg, your name or your server's hostname) []:redcloud.uccs.edu
-Email Address []:jsalaza8@redcloud.uccs.edu
-A challenge password []:jfsc123454321!
-An optional company name []:
+- Country Name (2 letter code) [XX]:US
+- State or Province Name (full name) []:Colorado
+- Locality Name (eg, city) [Default City]:Colorado Springs
+- Organization Name (eg, company) [Default Company Ltd]:UCCS
+- Organizational Unit Name (eg, section) []:Computer Science Department
+- Common Name (eg, your name or your server's hostname) []:redcloud.uccs.edu
+- Email Address []:jsalaza8@redcloud.uccs.edu
+- A challenge password []:jfsc123454321!
+- An optional company name []:
 
 openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
 
@@ -69,15 +69,15 @@ openssl genpkey -algorithm RSA -out client.key
 openssl req -new -key client.key -out client.csr
 
 When filling out the CSR prompts, you can use:
-Country Name (2 letter code) [XX]:US
-State or Province Name (full name) []:Colorado
-Locality Name (eg, city) [Default City]:Colorado Springs
-Organization Name (eg, company) [Default Company Ltd]:UCCS
-Organizational Unit Name (eg, section) []:Computer Science Department
-Common Name (eg, your name or your server's hostname) []:redcloud.uccs.edu
-Email Address []:jsalaza8@redcloud.uccs.edu
-A challenge password []:jfsc123454321!
-An optional company name []:
+- Country Name (2 letter code) [XX]:US
+- State or Province Name (full name) []:Colorado
+- Locality Name (eg, city) [Default City]:Colorado Springs
+- Organization Name (eg, company) [Default Company Ltd]:UCCS
+- Organizational Unit Name (eg, section) []:Computer Science Department
+- Common Name (eg, your name or your server's hostname) []:redcloud.uccs.edu
+- Email Address []:jsalaza8@redcloud.uccs.edu
+- A challenge password []:jfsc123454321!
+- An optional company name []:
 
 openssl x509 -req -days 365 -in client.csr -signkey client.key -out client.crt
 
