@@ -19,6 +19,7 @@ Developed for the CS 4220 project to showcase practical application of cryptogra
 - Linux/macOS environment
 - OpenSSL 1.1.1 or newer
 - GCC compiler
+- redcloud
 
 ## Encryption Details
 - Key Algorithm: RSA (2048-bit by default)
