@@ -86,16 +86,16 @@ touch client.c server.c Makefile
 
 ## Step 5: File Structure
 Use the "ls" command to make sure "client.c  client.crt  client.csr  client.key  Makefile  server.c  server.crt  server.csr  server.key" are included in the temp1 directory.
-temp1/
-├── client.c           # Client program
-├── client.crt         # Client certificate
-├── client.csr         # Client certificate request
-├── client.key         # Client private key
-├── server.c           # Server program
-├── server.crt         # Server certificate
-├── server.csr         # Server certificate request
-├── server.key         # Server private key
-├── Makefile           # Compilation instructions
+temp1:
+- client.c           # Client program
+- client.crt         # Client certificate
+- client.csr         # Client certificate request
+- client.key         # Client private key
+- server.c           # Server program
+- server.crt         # Server certificate
+- server.csr         # Server certificate request
+- server.key         # Server private key
+- Makefile           # Compilation instructions
 
 ## Step 6: Edit and code for files
 nano server.c
