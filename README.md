@@ -47,7 +47,7 @@ mkdir temp1
 cd temp1
 
 ## Step 3: Generate RSA keys and certificates
-Server:
+## Server:
 openssl genpkey -algorithm RSA -out server.key
 openssl req -new -key server.key -out server.csr
 
@@ -64,7 +64,7 @@ When filling out the CSR prompts, you can use:
 
 openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
 
-Client:
+## Client:
 openssl genpkey -algorithm RSA -out client.key
 openssl req -new -key client.key -out client.csr
 
@@ -106,12 +106,14 @@ Note: Code for server.c, client.c, and Makefile are included in the Github repos
 
 ## Step 7: Compilation and Execution
 Compile the code using the Makefile: 
-- make 
+- make
+  
 Run the server: 
-- ./server 
+- ./server
+  
 In a separate terminal, run the client: 
 - ./client
 
-- make clean
+make clean
 
 
